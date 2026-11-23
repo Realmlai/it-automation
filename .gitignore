@@ -1,6 +1,8 @@
-*.log
-*.tmp
-*.bak
 .env
+*.tfstate
+*.tfstate.*
+.terraform/
 secrets/
 credentials/
+*.log
+*.bak

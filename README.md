@@ -1,19 +1,22 @@
-# Company IT Brain
+\# IT Automation
 
-這是公司 IT 的長期知識庫與單一真相來源。
 
-## 用途
 
-- 記錄伺服器、網絡、雲端資源與服務
+這是公司 IT 自動化與基礎設施即程式碼（IaC）的執行層。
 
-- 保存 runbook、事故紀錄、變更決策與維運政策
 
-- 供 Grok Bot（IT Manager）與 Cursor（IT Automation Engineer）查閱
 
-## 重要原則
+\## 原則
 
-- 所有重要資料必須有來源與更新日期
 
-- 生產變更必須有影響評估、驗證與回滾方案
 
-- AI 只能建議；高風險操作必須經人工批准
+\- 所有伺服器與雲端設定優先使用 Terraform 或 Ansible
+
+\- 所有變更必須有 Git branch、PR、測試與 review
+
+\- 生產部署只可透過 CI/CD pipeline 執行
+
+\- 禁止在未經批准下直接修改生產環境
+
+\- 每個變更必須包含回滾方案
+
